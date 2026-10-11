@@ -1,12 +1,13 @@
 # PhoneDetector
 
-A computer vision project for detecting mobile phones in images using Python, OpenCV, and YOLO.
+A computer vision project that detects mobile phones in images using Python, OpenCV, and a fine-tuned YOLO model.
 
 ## Features
 
 * Mobile phone detection in images
 * YOLO-based object detection
-* Annotated image output
+* Bounding boxes and confidence scores
+* Option to save detection results
 * CPU inference support
 
 ## Technologies
@@ -18,21 +19,23 @@ A computer vision project for detecting mobile phones in images using Python, Op
 
 ## Requirements
 
-* Python 3.11 or newer
+* Python 3.11
+* A trained YOLO model (`best.pt`)
+* Dependencies listed in `requirements.txt`
 
 ## Installation
 
-Clone the repository and navigate to the project directory.
+Clone the repository:
 
-Create a virtual environment:
+```bash
+git clone https://github.com/betlsari/PhoneDetector.git
+cd PhoneDetector
+```
+
+Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
-```
-
-Activate it in Git Bash:
-
-```bash
 source .venv/Scripts/activate
 ```
 
@@ -42,19 +45,29 @@ Install the dependencies:
 pip install -r requirements.txt
 ```
 
+## Model Weights
+
+The trained model weights are not included in this repository.
+
+To run the project, obtain the trained `best.pt` file and place it at the model path configured in `main.py`.
+
+The model weights can be shared separately in a future release.
+
 ## Usage
 
-Run detection on an image:
+Run the detector on an image:
 
 ```bash
 python main.py --image "path/to/image.jpg" --output "result.jpg"
 ```
 
-The trained model weights and datasets are not included in this repository. The model must be placed at the path configured in `main.py`.
+Replace the example image path with the path to your own image.
 
-## Notes
+## Limitations
 
-The default mode uses the computer's camera. Use the `--image` argument to run detection on a saved image instead.
+* A compatible trained model is required.
+* Webcam detection depends on camera availability.
+* Detection accuracy depends on the training dataset and model quality.
 
 ## License
 
