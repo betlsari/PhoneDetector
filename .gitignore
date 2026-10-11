@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.env
+
+# Datasetler
+Cell-Phone-Dataset/
+Cell-Phone-Dataset-detect/
+custom_dataset/
+
+# Eğitim çıktıları ve büyük model dosyaları
+runs/
+*.pt
+*.onnx
+
+# Test çıktıları
+test_sonuc.jpg
