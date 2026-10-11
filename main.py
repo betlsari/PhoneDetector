@@ -55,7 +55,7 @@ def predict(model: YOLO, frame):
     return model.predict(
         source=frame,
         imgsz=IMAGE_SIZE,
-        conf=0.30,
+        conf=0.15,
         iou=0.45,
         max_det=10,
         classes=[1],
