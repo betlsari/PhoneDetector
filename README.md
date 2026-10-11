@@ -47,11 +47,14 @@ pip install -r requirements.txt
 
 ## Model Weights
 
-The trained model weights are not included in this repository.
+The trained YOLO model is available in the GitHub Releases section.
 
-To run the project, obtain the trained `best.pt` file and place it at the model path configured in `main.py`.
+**Download:** [best.pt — PhoneDetector v1.0.0](https://github.com/betlsari/PhoneDetector/releases/download/v1.0.0/best.pt)
 
-The model weights can be shared separately in a future release.
+After downloading, place `best.pt` at the model path configured in `main.py`.
+
+The model is not included in the source repository.
+
 
 ## Usage
 
