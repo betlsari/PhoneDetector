@@ -1,104 +1,61 @@
-\# PhoneDetector
+# PhoneDetector
 
+A computer vision project for detecting mobile phones in images using Python, OpenCV, and YOLO.
 
+## Features
 
-Python, OpenCV ve YOLO kullanarak görüntülerde cep telefonu tespiti yapan bilgisayarlı görü projesi.
+* Mobile phone detection in images
+* YOLO-based object detection
+* Annotated image output
+* CPU inference support
 
+## Technologies
 
+* Python
+* Ultralytics YOLO
+* OpenCV
+* NumPy
 
-\## Özellikler
+## Requirements
 
+* Python 3.11 or newer
 
+## Installation
 
-\* Görüntülerde cep telefonu tespiti
+Clone the repository and navigate to the project directory.
 
-\* YOLO modeliyle tahmin
-
-\* Tespit sonuçlarını görüntüye kaydetme
-
-\* CPU üzerinde çalışabilme
-
-
-
-\## Gereksinimler
-
-
-
-\* Python 3.11+
-
-\* Ultralytics
-
-\* OpenCV
-
-\* NumPy
-
-
-
-\## Kurulum
-
-
-
-Projeyi klonladıktan sonra proje klasöründe aşağıdaki komutları çalıştırın:
-
-
+Create a virtual environment:
 
 ```bash
-
 python -m venv .venv
-
 ```
 
-
-
-Git Bash üzerinde sanal ortamı etkinleştirmek için:
-
-
+Activate it in Git Bash:
 
 ```bash
-
 source .venv/Scripts/activate
-
 ```
 
-
-
-Gerekli paketleri yükleyin:
-
-
+Install the dependencies:
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
+## Usage
 
-
-\## Kullanım
-
-
+Run detection on an image:
 
 ```bash
-
-python main.py --image "gorsel.jpg" --output "sonuc.jpg"
-
+python main.py --image "path/to/image.jpg" --output "result.jpg"
 ```
 
+The trained model weights and datasets are not included in this repository. The model must be placed at the path configured in `main.py`.
 
+## Notes
 
-\*\*Not:\*\* Eğitilmiş model ve veri seti bu depoya dahil değildir. Model dosyası, `main.py` içinde tanımlanan konumda bulunmalıdır.
+The default mode uses the computer's camera. Use the `--image` argument to run detection on a saved image instead.
 
+## License
 
-
-\## Teknolojiler
-
-
-
-\* Python
-
-\* Ultralytics YOLO
-
-\* OpenCV
-
-
-
+No license has been specified yet.
